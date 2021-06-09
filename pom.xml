@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Java_Algorithm_Code</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>01_LanQiaoCup_TrueQuestions</module>
+        <module>02_LanQiao_AlgorithmOnlineCourse</module>
+        <module>03_Interview_SwordFingerOffer</module>
+        <module>04_Algorithm_class</module>
+        <module>05_SangGG_Algorithm</module>
+        <module>06_Algorithm_Notes</module>
+        <module>07_企业笔试题</module>
+        <module>08_团队天梯赛</module>
+        <module>09_ACM_Practice</module>
+        <module>10_TestModule</module>
+        <module>11_数学建模</module>
+    </modules>
+
+    <dependencies>
+        <!--单元测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--jdk8的插件-->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                <target>1.8</target>
+                <source>1.8</source>
+                <encoding>UTF-8</encoding>
+              </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

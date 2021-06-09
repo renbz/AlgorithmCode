@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="03_Interview_SwordFingerOffer" />
+        <module name="09_ACM_Practice" />
+        <module name="11_数学建模" />
+        <module name="01_LanQiaoCup_TrueQuestions" />
+        <module name="10_TestModule" />
+        <module name="02_LanQiao_AlgorithmOnlineCourse" />
+        <module name="07_企业笔试题" />
+        <module name="04_Algorithm_class" />
+        <module name="06_Algorithm_Notes" />
+        <module name="08_团队天梯赛" />
+        <module name="05_SangGG_Algorithm" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
