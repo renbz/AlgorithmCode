@@ -27,6 +27,7 @@ public class R32_3_从上到下打印二叉树III {
                     if (curNode.right != null) queue.add(curNode.right);
                 }
             }
+
             list.add(sublist);
 
         }
