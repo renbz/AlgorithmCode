@@ -16,20 +16,24 @@ public class R32_3_从上到下打印二叉树III {
         List<List<Integer>> list = new ArrayList<>();
         queue.add(root);
 
+        boolean flag = true;
         while (!queue.isEmpty()) {
-            List<Integer> sublist = new ArrayList<>();
+            flag = !flag;
+            LinkedList<Integer> sublist = new LinkedList<>();
             int t = queue.size();
             for (int i = 0; i < t; i++) {
                 TreeNode curNode = queue.poll();
                 if (curNode != null) {
-                    sublist.add(curNode.val);
+                    if (flag) {
+                        sublist.addFirst(curNode.val);
+                    } else {
+                        sublist.add(curNode.val);
+                    }
                     if (curNode.left != null) queue.add(curNode.left);
                     if (curNode.right != null) queue.add(curNode.right);
                 }
             }
-
             list.add(sublist);
-
         }
         return list;
     }
