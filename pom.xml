@@ -20,6 +20,7 @@
         <module>09_ACM_Practice</module>
         <module>10_TestModule</module>
         <module>11_数学建模</module>
+        <module>13_Tmp</module>
     </modules>
 
     <dependencies>

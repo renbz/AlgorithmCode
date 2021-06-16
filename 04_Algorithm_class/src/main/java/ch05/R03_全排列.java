@@ -1,5 +1,7 @@
 package ch05;
 
+import java.util.Arrays;
+
 /**
  * @author Ren
  */
@@ -9,10 +11,11 @@ public class R03_全排列 {
     public static void main(String[] args) {
         f(0);
     }
+
     public static void f(int k){
         if(k==arr.length){
-
             // 插入需要判断执行的业务代码
+            System.out.println(Arrays.toString(arr));
         }else{
             for (int i = k; i < arr.length; i++) {
                 int t = arr[i];arr[i]=arr[k];arr[k]=t;
