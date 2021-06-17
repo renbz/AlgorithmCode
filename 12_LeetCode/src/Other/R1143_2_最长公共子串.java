@@ -11,7 +11,6 @@ public class R1143_2_最长公共子串 {
         String str1 = "abcmdf";
         String str2 = "abcmf";
         System.out.println(longestCommonSubstring(str1, str2));
-
     }
 
     public static int longestCommonSubstring(String str1, String str2) {
