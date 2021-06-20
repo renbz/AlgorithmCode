@@ -8,8 +8,8 @@ import java.util.Arrays;
 
 public class R02_MergeSort2 {
     public static void main(String[] args) {
-        int[] arr = arr(30);
-        mergeSort(arr, 0, arr.length - 1);
+        int[] arr = arr(5);
+        mergeSort(new int[]{23,25,2,57,48}, 0, arr.length - 1);
     }
 
 

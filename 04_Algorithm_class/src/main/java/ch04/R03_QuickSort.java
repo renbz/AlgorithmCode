@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class R03_QuickSort {
     public static void main(String[] args) {
-        int[] arr = arr(30);
+        int[] arr = arr(20);
         System.out.println("初始随机元素↓↓\n" + Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println("快速排序后↑↑");

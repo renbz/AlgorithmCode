@@ -22,6 +22,7 @@ public class R05_约瑟夫环 {
         ysf(total, num, start);
     }
 
+
     /**
      * @param total 总人数
      * @param num   循环报数周期

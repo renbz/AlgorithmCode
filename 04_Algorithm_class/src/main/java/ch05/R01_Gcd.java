@@ -7,8 +7,24 @@ package ch05;
 public class R01_Gcd {
 
     public static void main(String[] args) {
-        System.out.println(gcd2(260, 20000));
+        System.out.println(gcd(100, 20000));
+        //System.out.println(gcdt(200, 100));
     }
+
+
+    /**
+     * 辗转相除法
+     *
+     * @param a
+     * @param b
+     * @return
+     */
+    public static int gcd(int a, int b) {
+        int max = a > b ? a : b;
+        int min = a > b ? b : a;
+        return max % min == 0 ? min : gcd(min, max % min);
+    }
+
 
     public static int gcd2(int a, int b) {
         if (a == b) return a;
@@ -33,6 +49,8 @@ public class R01_Gcd {
             return a;
         return gcd1(a>b ? a-b : b-a , a<b ? a : b);
     }
+
+
     //GetCommonDivisor
     static int gcd3(int a,int b){
         if(a==b)
