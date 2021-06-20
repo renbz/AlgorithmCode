@@ -1,11 +1,8 @@
 package ch06;
-
 import java.util.Arrays;
-
 /**
  * @author Ren
  */
-
 public class R04_最大字段和 {
     static int len = 15;
     static int[] arr = arr(15);
@@ -14,10 +11,7 @@ public class R04_最大字段和 {
         System.out.println(Arrays.toString(arr));
         int ans = getMaxSubSum(15);
         System.out.println("该数组的最大字段和为： " + ans);
-
     }
-
-
     static int getMaxSubSum(int n) {
         int sum = 0, max = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;
 
@@ -25,12 +19,10 @@ public class R04_最大字段和 {
             sum += arr[i];
             if (sum < 0) sum = 0;
             max = max > sum ? max : sum;
-            //System.out.println(max);
             max2 = max2 > arr[i] ? max2 : arr[i];
         }
         return max2 < 0 ? max2 : max;
     }
-
     /**
      * 生成随机数组
      */
@@ -42,7 +34,6 @@ public class R04_最大字段和 {
             } else {
                 arr[i] = (int) (Math.random() * 20);
             }
-
         }
         return arr;
     }
