@@ -10,7 +10,6 @@ public class R05_约瑟夫环 {
     static int[] arr;
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
 
         int total = 40;
         int num = 7;
@@ -22,7 +21,8 @@ public class R05_约瑟夫环 {
         ysf(total, num, start);
     }
 
-
+// 0 1 2 3 4 5 6 7 8
+// 2 3 4 5 6 7 8 9
     /**
      * @param total 总人数
      * @param num   循环报数周期
@@ -35,7 +35,7 @@ public class R05_约瑟夫环 {
             for (int i = 0; i < total; i++) {
                 if (arr[i] != 0) {
                     if (k == num) {
-                        System.out.println(arr[i]);
+                        System.out.print(arr[i]+"\t");
                         arr[i] = 0;
                         k = 0;
                     }

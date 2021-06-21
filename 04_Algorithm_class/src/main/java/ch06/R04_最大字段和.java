@@ -16,15 +16,12 @@ public class R04_最大字段和 {
     }
 
     static int getMaxSubSum(int n) {
-        int sum = 0, max = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;
-
+        int sum = 0, max = 0;
         for (int i = 0; i < n; i++) {
-            sum += arr[i];
-            if (sum < 0) sum = 0;
-            max = max > sum ? max : sum;
-            max2 = max2 > arr[i] ? max2 : arr[i];
+            max = max > 0 ? max + arr[i] : arr[i];
+            if (max > sum) sum = max;
         }
-        return max2 < 0 ? max2 : max;
+        return max;
     }
 
     /**
