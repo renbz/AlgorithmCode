@@ -1,5 +1,7 @@
 package ch06;
+
 import java.util.Arrays;
+
 /**
  * @author Ren
  */
@@ -12,6 +14,7 @@ public class R04_最大字段和 {
         int ans = getMaxSubSum(15);
         System.out.println("该数组的最大字段和为： " + ans);
     }
+
     static int getMaxSubSum(int n) {
         int sum = 0, max = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;
 
@@ -23,6 +26,7 @@ public class R04_最大字段和 {
         }
         return max2 < 0 ? max2 : max;
     }
+
     /**
      * 生成随机数组
      */
