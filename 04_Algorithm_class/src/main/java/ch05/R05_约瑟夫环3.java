@@ -4,7 +4,7 @@ package ch05;
  * @author Ren
  */
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,14 +19,16 @@ public class R05_约瑟夫环3 {
         System.out.println(ysf(3, 2, 2));
     }
 
+
     static int ysf(int total, int num, int start) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new LinkedList<>();
         for (int i = 0; i < total; i++) list.add(i + 1);
         int index = 1 - start;
-        while (total > 1) {
-            index = (index + num - 1) % (total--);
-            System.out.print(list.remove(index)+"\t");
+        while (list.size() > 1) {
+            index = (index + num - 1) % (list.size());
+            System.out.print(list.remove(index) + "\t");
         }
         return list.get(0);
     }
+
 }

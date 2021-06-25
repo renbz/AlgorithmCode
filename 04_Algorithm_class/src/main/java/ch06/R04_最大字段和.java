@@ -6,23 +6,24 @@ import java.util.Arrays;
  * @author Ren
  */
 public class R04_最大字段和 {
-    static int len = 15;
-    static int[] arr = arr(15);
+    static int len = 5;
+    static int[] arr = arr(len);
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(arr));
-        int ans = getMaxSubSum(15);
+        int ans = getMaxSubSum(len);
         System.out.println("该数组的最大字段和为： " + ans);
     }
 
     static int getMaxSubSum(int n) {
-        int sum = 0, max = 0;
+        int sum = 0, tmp = 0;
         for (int i = 0; i < n; i++) {
-            max = max > 0 ? max + arr[i] : arr[i];
-            if (max > sum) sum = max;
+            tmp = tmp > 0 ? tmp + arr[i] : arr[i];
+            if (tmp > sum) sum = tmp;
         }
-        return max;
+        return sum;
     }
+
 
     /**
      * 生成随机数组
