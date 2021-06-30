@@ -17,6 +17,7 @@ public class R05_约瑟夫环3 {
         System.out.println(ysf(total, num, start));
 
         System.out.println(ysf(3, 2, 2));
+
     }
 
 
