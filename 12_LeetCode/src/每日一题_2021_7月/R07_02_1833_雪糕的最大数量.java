@@ -16,7 +16,6 @@ public class R07_02_1833_雪糕的最大数量 {
      */
     public int maxIceCream(int[] costs, int coins) {
 
-
         Arrays.sort(costs);
         int count = 0;
         for (int i = 0; i < costs.length; i++) {
