@@ -1,5 +1,7 @@
 package 每日一题_2021_7月;
 
+import java.util.Arrays;
+
 /**
  * @author Ren
  */
@@ -15,8 +17,17 @@ public class R07_02_1833_雪糕的最大数量 {
     public int maxIceCream(int[] costs, int coins) {
 
 
-
-        return 0;
+        Arrays.sort(costs);
+        int count = 0;
+        for (int i = 0; i < costs.length; i++) {
+            if(coins-costs[i]>=0){
+                coins -= costs[i];
+                count++;
+            }else{
+                break;
+            }
+        }
+        return count;
     }
 
 }
