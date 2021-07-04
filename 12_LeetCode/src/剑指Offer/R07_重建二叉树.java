@@ -41,8 +41,6 @@ public class R07_重建二叉树 {
         return root;
     }
 
-
-
     class TreeNode {
         int val;
         TreeNode left;
