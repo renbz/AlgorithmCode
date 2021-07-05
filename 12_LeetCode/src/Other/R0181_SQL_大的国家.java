@@ -1,0 +1,21 @@
+package Other;
+
+/**
+ * @author Ren
+ */
+
+public class R0181_SQL_大的国家 {
+
+    /**
+     *
+     *
+
+     select name , population , area from world where area >3000000
+     union
+     select name , population , area from world where population >25000000;
+
+     *
+     *
+     */
+
+}
