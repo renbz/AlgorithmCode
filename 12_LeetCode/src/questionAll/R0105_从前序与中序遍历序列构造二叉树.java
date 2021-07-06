@@ -1,6 +1,4 @@
-package Other;
-
-import 剑指Offer.R07_重建二叉树;
+package questionAll;
 
 import java.util.Arrays;
 

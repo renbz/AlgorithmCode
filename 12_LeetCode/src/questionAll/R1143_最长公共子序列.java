@@ -1,6 +1,4 @@
-package Other;
-
-import java.util.Arrays;
+package questionAll;
 
 /**
  * @author Ren

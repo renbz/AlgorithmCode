@@ -1,10 +1,10 @@
-package 每日一题_2021_5月;
+package questionAll;
 
 /**
  * @author Ren
  */
 
-public class R05_31_4的幂 {
+public class R0342_4的幂 {
 
     public boolean isPowerOfFour(int n) {
 

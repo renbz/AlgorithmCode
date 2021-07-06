@@ -1,4 +1,4 @@
-package Other;
+package questionAll;
 
 import java.util.PriorityQueue;
 

@@ -1,4 +1,4 @@
-package Other;
+package questionAll;
 
 /**
  * @author Ren

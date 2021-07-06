@@ -1,6 +1,4 @@
-package Other;
-
-import 剑指Offer.R28_对称的二叉树;
+package questionAll;
 
 /**
  * @author Ren

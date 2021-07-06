@@ -1,10 +1,10 @@
-package Other;
+package questionAll;
 
 /**
  * @author Ren
  */
 
-public class R0181_SQL_大的国家 {
+public class R0595_SQL_大的国家 {
 
     /**
      *
