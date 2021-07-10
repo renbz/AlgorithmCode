@@ -8,15 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="08_团队天梯赛" />
         <module name="13_Tmp" />
-        <module name="03_Interview_SwordFingerOffer" />
-        <module name="05_SangGG_Algorithm" />
-        <module name="09_ACM_Practice" />
         <module name="04_Algorithm_class" />
         <module name="11_数学建模" />
         <module name="06_Algorithm_Notes" />
+        <module name="03_Interview_SwordFingerOffer" />
+        <module name="05_SangGG_Algorithm" />
         <module name="02_LanQiao_AlgorithmOnlineCourse" />
         <module name="10_TestModule" />
         <module name="07_企业笔试题" />
+        <module name="09_ACM_Practice" />
         <module name="01_LanQiaoCup_TrueQuestions" />
       </profile>
     </annotationProcessing>
