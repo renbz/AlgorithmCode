@@ -11,7 +11,7 @@ import java.util.Map;
 public class R0290_单词规律 {
 
     public static void main(String[] args) {
-        System.out.println(wordPattern("abba","dog cat cat dog"));
+        System.out.println(wordPattern("aaaa","dog cat cat dog"));
     }
 
     public static boolean wordPattern(String pattern, String s) {
@@ -28,17 +28,18 @@ public class R0290_单词规律 {
                 if (pattern.charAt(i) != pattern.charAt(index))
                     return false;
             }
+            strMap.put(strArr[i], i);
         }
 
-        for (int i = 0; i < s.length(); i++) {
-            if (patternMap.get(s.charAt(i)) != null) {
-                int index = patternMap.get(s.charAt(i));
-                patternMap.put(s.charAt(i), i);
-                if (strArr[i].equals(strArr[index]))
+        for (int i = 0; i < pattern.length(); i++) {
+            if (patternMap.get(pattern.charAt(i)) != null) {
+                int index = patternMap.get(pattern.charAt(i));
+                patternMap.put(pattern.charAt(i), i);
+                if (!strArr[i].equals(strArr[index]))
                     return false;
             }
+            patternMap.put(pattern.charAt(i), i);
         }
         return true;
     }
-
 }
