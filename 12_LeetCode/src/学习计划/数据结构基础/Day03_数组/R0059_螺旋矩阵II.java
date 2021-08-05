@@ -1,4 +1,4 @@
-package 学习计划.数据结构基础.Day03数组;
+package 学习计划.数据结构基础.Day03_数组;
 
 /**
  * @author Ren
