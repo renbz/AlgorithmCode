@@ -1,4 +1,8 @@
-package 学习计划.数据结构基础.Day01_数组;
+package 好未来.秋招2021_01;
+
+/**
+ * @author Ren
+ */
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +13,29 @@ import java.util.List;
  */
 import java.util.*;
 
-public class R0015_三数之和 {
+public class Main02 {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        String str = in.nextLine();
+        String[] s = str.split(" ");
+        int[] arr = new int[s.length];
+        for (int i = 0; i < s.length; i++) {
+            arr[i] = Integer.parseInt(s[i]);
+        }
+        List<List<Integer>> list = threeSum(arr);
+        for (int i = 0; i < list.size(); i++) {
+            List<Integer> ans = list.get(i);
+            for (int i1 = 0; i1 < ans.size(); i1++) {
+                System.out.print(ans.get(i1) + " ");
+            }
+            System.out.println();
+        }
+
+
+    }
 
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
