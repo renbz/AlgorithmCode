@@ -33,8 +33,6 @@ public class Main02 {
             }
             System.out.println();
         }
-
-
     }
 
     public static List<List<Integer>> threeSum(int[] nums) {
@@ -44,7 +42,6 @@ public class Main02 {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > 0) return ans;
             if (i > 0 && nums[i] == nums[i - 1]) continue;
-
             int l = i + 1, r = nums.length - 1;
             while (l < r) {
                 if (nums[i] + nums[l] + nums[r] == 0) {
