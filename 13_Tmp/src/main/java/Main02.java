@@ -8,7 +8,7 @@ public class Main02 {
         f();
     }
     public static int[] f(){
-        f();
+        long[] a = new long[999999999];
         return new int[1000000];
     }
 
