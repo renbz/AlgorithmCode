@@ -28,11 +28,11 @@ public class R0105_从前序与中序遍历序列构造二叉树2 {
         int rootValue = preorder[0];
         if (len == 1) return new TreeNode(rootValue);
 
-        int preIndex = getIndex(preorder, rootValue);
-        int[] leftPreorder = Arrays.copyOfRange(preorder, 0, preIndex);
-        int[] rightPreorder = Arrays.copyOfRange(preorder, preIndex + 1, len);
+        int inIndex = getIndex(inorder, rootValue);
+        int[] leftPreorder = Arrays.copyOfRange(preorder, 1, 1+inIndex);
+        int[] rightPreorder = Arrays.copyOfRange(preorder, 1+inIndex, len);
 
-        int[] leftInorder = Arrays.copyOfRange(inorder, 1, len - rightPreorder.length);
+        int[] leftInorder = Arrays.copyOfRange(inorder, 0, leftPreorder.length);
         int[] rightInorder = Arrays.copyOfRange(inorder, len - rightPreorder.length, len);
 
         TreeNode root = new TreeNode(rootValue);
