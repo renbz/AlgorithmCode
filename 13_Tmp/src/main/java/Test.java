@@ -19,13 +19,16 @@ public class Test implements Cloneable {
         Map<Integer, Integer> treeMap = new TreeMap<>();
 
 
-
         System.out.println(Integer.MAX_VALUE);
         System.out.println((3 ^ 15) == 12);
 
         new Thread(() -> {
             System.out.println("ABCDEF");
         }, Thread.currentThread().getName()).start();
+
+
+        ThreadLocal threadLocal;
+        Thread thread;
 
     }
 
