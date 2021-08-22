@@ -15,10 +15,8 @@ import java.util.*;
 
 public class Main02 {
 
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
         String str = in.nextLine();
         String[] s = str.split(" ");
         int[] arr = new int[s.length];
