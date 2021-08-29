@@ -12,4 +12,5 @@ public class Main02 {
         return new int[1000000];
     }
 
+
 }
