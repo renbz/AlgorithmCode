@@ -29,7 +29,7 @@ public class Main04_3 {
             int a = 99999, b = 99999;
             if (i - 1 >= 0) a = dfs(input, i - 1, j);
             if (j - 1 >= 0) b = dfs(input, i, j - 1);
-            return t + a>b?a:b;
+            return t + a > b ? a : b;
         }
     }
 }

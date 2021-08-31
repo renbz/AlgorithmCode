@@ -24,7 +24,6 @@ public class Main02_长城守卫军 {
             f();
         }
         System.out.println(getMin());
-
     }
 
     static void f() {

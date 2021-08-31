@@ -1,6 +1,8 @@
 package 奇安信;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Ren
@@ -44,7 +46,6 @@ public class Main01_最近真分数2 {
         Main01_最近真分数2 obj = new Main01_最近真分数2();
         int[] aa = obj.getFraction((float) 0.1415926535898);
         System.out.println(Arrays.toString(aa));
-
     }
 
 
