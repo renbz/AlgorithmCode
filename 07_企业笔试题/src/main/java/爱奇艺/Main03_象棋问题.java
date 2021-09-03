@@ -16,7 +16,6 @@ public class Main03_象棋问题 {
         int n = Integer.parseInt(Str.substring(2));
         NHuangHou(n);
         System.out.println(res.toString());
-
     }
 
     public static void NHuangHou(int n) {
@@ -50,6 +49,4 @@ public class Main03_象棋问题 {
             }
         }
     }
-
-
 }
