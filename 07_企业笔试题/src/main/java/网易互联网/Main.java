@@ -4,9 +4,8 @@ package 网易互联网;
  * @author Ren
  */
 
-import com.sun.scenario.effect.Merge;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
