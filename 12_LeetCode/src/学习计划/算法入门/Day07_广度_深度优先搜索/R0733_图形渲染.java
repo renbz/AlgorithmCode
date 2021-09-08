@@ -1,4 +1,4 @@
-package 学习计划.算法入门.Day07_广度_深度优先有搜索;
+package 学习计划.算法入门.Day07_广度_深度优先搜索;
 
 /**
  * @author Ren
