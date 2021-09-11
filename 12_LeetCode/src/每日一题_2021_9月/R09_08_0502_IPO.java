@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  * @author Ren
  */
 
-public class R09_08_502_IPO {
+public class R09_08_0502_IPO {
 
     public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         int n = profits.length;

@@ -7,7 +7,7 @@ import java.util.List;
  * @author Ren
  */
 
-public class R09_09_68_文本左右对齐 {
+public class R09_09_0068_文本左右对齐 {
 
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> ans = new ArrayList<String>();

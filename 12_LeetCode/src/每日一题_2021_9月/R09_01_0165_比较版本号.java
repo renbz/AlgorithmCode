@@ -4,7 +4,7 @@ package 每日一题_2021_9月;
  * @author Ren
  */
 
-public class R09_01_165_比较版本号 {
+public class R09_01_0165_比较版本号 {
 
     public static void main(String[] args) {
         int i = compareVersion("0.1", "1.1");

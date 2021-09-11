@@ -4,7 +4,7 @@ package 每日一题_2021_9月;
  * @author Ren
  */
 
-public class R09_05_470_用Rand7实现Rand10 {
+public class R09_05_0470_用Rand7实现Rand10 {
 
     public int rand10() {
         while (true) {
