@@ -16,7 +16,6 @@ public class Main01_寻找只出现一次的数字 {
      * @return int整型一维数组
      */
     public int[] find (int[] arg) {
-        // write code here
         int len = arg.length;
         if(len==0) return new int[]{};
         if(len==1) return new int[]{arg[0]};
