@@ -1,4 +1,4 @@
-package 学习计划.贝壳找房.day02;
+package 学习计划.贝壳找房.Day02;
 
 import java.util.ArrayList;
 import java.util.Arrays;

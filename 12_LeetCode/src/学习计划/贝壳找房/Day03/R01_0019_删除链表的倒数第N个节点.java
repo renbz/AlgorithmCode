@@ -1,4 +1,4 @@
-package 学习计划.贝壳找房.day03;
+package 学习计划.贝壳找房.Day03;
 
 /**
  * @author Ren
