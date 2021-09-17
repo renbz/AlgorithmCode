@@ -31,9 +31,7 @@ public class R01_万万没想到之聪明的编辑 {
                 }
             }
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < list.size(); i++) {
-                sb.append(list.get(i));
-            }
+            for (int i = 0; i < list.size(); i++) sb.append(list.get(i));
             System.out.println(sb.toString());
         }
     }
