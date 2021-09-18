@@ -1,10 +1,10 @@
-package 网易互联网;
+package 网易互联网.网易有道;
 
 /**
  * @author Ren
  */
 
-public class Main04_3 {
+public class Main04_2 {
 
 
     public class Solution {
@@ -17,19 +17,26 @@ public class Main04_3 {
          * @return int整型
          */
         public int minSailCost(int[][] input) {
-            return dfs(input, input.length - 1, input[0].length - 1);
+            return dfs(input, 0, 0);
         }
 
         public int dfs(int[][] input, int i, int j) {
-            if (i < 0 || j < 0) return 0;
+            if (i > input.length - 1 || j > input[0].length - 1) return 0;
             int t = 0;
             if (input[i][j] == 0) t = 2;
             if (input[i][j] == 1) t = 1;
-            if (input[i][j] == 2) t = 99999;
-            int a = 99999, b = 99999;
-            if (i - 1 >= 0) a = dfs(input, i - 1, j);
-            if (j - 1 >= 0) b = dfs(input, i, j - 1);
-            return t + a > b ? a : b;
+            if (input[i][j] == 2) {
+                return Integer.MAX_VALUE-9999;
+            }
+            int a = Integer.MAX_VALUE-9999, b = Integer.MAX_VALUE-9999;
+            if (i + 1 < input.length - 1) {
+                a = dfs(input, i + 1, j);
+            }
+            if (j + 1 < input[0].length - 1) {
+                b = dfs(input, i, j+1);
+            }
+            return t + Math.min(a, b);
         }
     }
+
 }
