@@ -19,3 +19,4 @@ public class R09_19_0650_只有两个键的键盘 {
         return f[n];
     }
 }
+
