@@ -1,4 +1,4 @@
-/**
+package other; /**
  * @author Ren
  */
 import java.util.*;
