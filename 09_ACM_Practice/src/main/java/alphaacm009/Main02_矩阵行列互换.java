@@ -6,7 +6,7 @@ package alphaacm009;
 
 import java.util.Scanner;
 
-public class Main02 {
+public class Main02_矩阵行列互换 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt(), m = in.nextInt();

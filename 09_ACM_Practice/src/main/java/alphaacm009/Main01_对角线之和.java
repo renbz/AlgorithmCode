@@ -6,7 +6,7 @@ package alphaacm009;
 
 import java.util.Scanner;
 
-public class Main01 {
+public class Main01_对角线之和 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int[][] arr = new int[3][3];

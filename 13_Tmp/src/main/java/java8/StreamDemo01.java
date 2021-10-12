@@ -3,6 +3,7 @@ package java8;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -16,12 +17,12 @@ public class StreamDemo01 {
         List<Category> categoryList = new ArrayList<>();
         // List<Category> categoryList2 = Collections.emptyList();
 
-        categoryList.add(new Category(1L,"Java","Java",0L,1));
-        categoryList.add(new Category(2L,"PHP","PHP",0L,2));
-        categoryList.add(new Category(3L,"JavaScript","JavaScript",0L,3));
-        categoryList.add(new Category(4L,"Python","Python",0L,10));
-        categoryList.add(new Category(5L,"Go","Go",0L,8));
-        categoryList.add(new Category(6L,"Ruby","Ruby",0L,4));
+        categoryList.add(new Category(1L,"Java","Java",0L,1,1.2f));
+        categoryList.add(new Category(2L,"PHP","PHP",0L,2,2.2f));
+        categoryList.add(new Category(3L,"JavaScript","JavaScript",0L,3,2.2f));
+        categoryList.add(new Category(4L,"Python","Python",0L,10,2.2f));
+        categoryList.add(new Category(5L,"Go","Go",0L,8,2.2f));
+        categoryList.add(new Category(6L,"Ruby","Ruby",0L,4,2.2f));
     }
 
     public void StreamSort(List<Category> categoryList){
@@ -82,8 +83,14 @@ public class StreamDemo01 {
     public void StreamDistinct(List<Category> categoryList){
         categoryList.stream().distinct().collect(Collectors.toList());
         categoryList.forEach(System.out::println);
-
     }
+
+    public void StreamMax(List<Category> categoryList){
+        Optional<Category> optionalCategory = categoryList.stream().max((o1,o2)-> o1.getSort()-o2.getSort());
+        System.out.println(optionalCategory);
+    }
+
+    //public void StreamReduce
 
 
 
