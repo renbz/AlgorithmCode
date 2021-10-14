@@ -85,12 +85,29 @@ public class StreamDemo01 {
         categoryList.forEach(System.out::println);
     }
 
+    /**
+     * 求出最大sort的信息
+     * @param categoryList
+     */
     public void StreamMax(List<Category> categoryList){
         Optional<Category> optionalCategory = categoryList.stream().max((o1,o2)-> o1.getSort()-o2.getSort());
         System.out.println(optionalCategory);
     }
 
-    //public void StreamReduce
+    /**
+     * 求集合中某一对象元素属性的和
+     * @param categoryList
+     */
+    public void StreamReduce(List<Category> categoryList){
+        // 对集合中的元素的价格求总和
+        Float reduce = categoryList.stream().map(res -> {
+            return res.getPrice();
+        }).reduce(0f, (c1, c2) -> c1 + c2);
+        System.out.println(reduce);
+    }
+
+
+
 
 
 
