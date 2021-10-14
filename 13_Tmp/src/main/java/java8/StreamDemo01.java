@@ -105,13 +105,4 @@ public class StreamDemo01 {
         }).reduce(0f, (c1, c2) -> c1 + c2);
         System.out.println(reduce);
     }
-
-
-
-
-
-
-
-
-
 }
