@@ -1,11 +1,10 @@
-package xiaomi_everyday;
+package 每日一题_2021_10月;
 
 /**
  * @author Ren
  */
 
-public class R10_20_0066_加一 {
-
+public class R10_21_0066_加一 {
     public int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
             digits[i]++;
