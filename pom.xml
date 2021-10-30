@@ -15,11 +15,12 @@
         <module>04_Algorithm_class</module>
         <module>05_SangGG_Algorithm</module>
         <module>06_Algorithm_Notes</module>
-        <module>07_企业笔试题</module>
-        <module>08_团队天梯赛</module>
+        <module>07_BusinessExamProblems</module>
+        <module>08_TeamLadderRace</module>
         <module>09_ACM_Practice</module>
         <module>10_TestModule</module>
-        <module>11_数学建模</module>
+        <module>11_MathModeling</module>
+        <module>12_LeetCode</module>
         <module>13_Tmp</module>
     </modules>
 
