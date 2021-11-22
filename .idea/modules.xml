@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/07_企业笔试题/07_BusinessExamProblems.iml" filepath="$PROJECT_DIR$/07_企业笔试题/07_BusinessExamProblems.iml" />
-      <module fileurl="file://$PROJECT_DIR$/08_团队天梯赛/08_TeamLadderRace.iml" filepath="$PROJECT_DIR$/08_团队天梯赛/08_TeamLadderRace.iml" />
-      <module fileurl="file://$PROJECT_DIR$/11_数学建模/11_MathModeling.iml" filepath="$PROJECT_DIR$/11_数学建模/11_MathModeling.iml" />
       <module fileurl="file://$PROJECT_DIR$/12_LeetCode/12_LeetCode.iml" filepath="$PROJECT_DIR$/12_LeetCode/12_LeetCode.iml" />
     </modules>
   </component>
