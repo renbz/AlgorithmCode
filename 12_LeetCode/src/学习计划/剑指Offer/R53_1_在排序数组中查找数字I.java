@@ -6,6 +6,14 @@ package 学习计划.剑指Offer;
 
 public class R53_1_在排序数组中查找数字I {
 
+
+    public static void main(String[] args) {
+        R53_1_在排序数组中查找数字I obj = new R53_1_在排序数组中查找数字I();
+        int[] a = new int[]{2, 2};
+        int search = obj.search(a, 2);
+        System.out.println(search);
+    }
+
     /**
      * 二分查找
      *
@@ -13,47 +21,26 @@ public class R53_1_在排序数组中查找数字I {
      * @param target
      * @return
      */
-
-    int midIndex = 0, leftIndex = 0, rightIndex;
-
     public int search(int[] nums, int target) {
-        int l = 0, r = nums.length - 1, mid = 0;
-        while (l < r) {
-            mid = l + (r - l) / 2;
-            if (nums[mid] == target) {
-                midIndex = mid;
-                break;
-            } else if (nums[mid] > target) r = mid - 1;
-            else l = mid + 1;
+        int leftIdx = binarySearch(nums, target, true);
+        int rightIdx = binarySearch(nums, target, false) - 1;
+        if (leftIdx <= rightIdx && rightIdx < nums.length && nums[leftIdx] == target && nums[rightIdx] == target) {
+            return rightIdx - leftIdx + 1;
         }
-        if (midIndex == 0) return 0;
-        searchRightIndex(nums, target, midIndex, r);
-        searchLeftIndex(nums, target, l, midIndex);
-
-        return rightIndex - leftIndex + 1;
+        return 0;
     }
 
-    private void searchLeftIndex(int[] nums, int target, int l, int r) {
-        while (l <= r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] == target) {
-                leftIndex = mid;
-                searchLeftIndex(nums, target, l, mid-1);
+    public int binarySearch(int[] nums, int target, boolean lower) {
+        int left = 0, right = nums.length - 1, ans = nums.length;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] > target || (lower && nums[mid] >= target)) {
+                right = mid - 1;
+                ans = mid;
             } else {
-                searchLeftIndex(nums, target, mid+1, r);
+                left = mid + 1;
             }
         }
-    }
-
-    private void searchRightIndex(int[] nums, int target, int l, int r) {
-        while (l <= r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] == target) {
-                rightIndex = mid;
-                searchLeftIndex(nums, target, mid+1, r);
-            } else {
-                searchRightIndex(nums, target, l, mid-1);
-            }
-        }
+        return ans;
     }
 }
