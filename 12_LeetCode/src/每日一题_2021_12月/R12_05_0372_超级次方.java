@@ -1,7 +1,5 @@
 package 每日一题_2021_12月;
 
-import java.math.BigInteger;
-
 /**
  * @author Ren - 乔治的哥们
  * @Date: 2021/12/5 09:51
