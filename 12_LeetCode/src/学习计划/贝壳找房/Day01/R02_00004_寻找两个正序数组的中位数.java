@@ -35,29 +35,29 @@ public class R02_00004_寻找两个正序数组的中位数 {
             }
             return -1;
         } else {
-            mid=mid+1;
-            int i = 0, j = 0,t=0;
+            mid = mid + 1;
+            int i = 0, j = 0, t = 0;
             while (i < nums1.length && j < nums2.length) {
                 mid--;
-                if (mid == 0) return (Math.min(nums1[i], nums2[j])+t)/2.0;
+                if (mid == 0) return (Math.min(nums1[i], nums2[j]) + t) / 2.0;
                 if (nums1[i] <= nums2[j]) {
-                    t=nums1[i];
+                    t = nums1[i];
                     i++;
                 } else {
-                    t=nums2[j];
+                    t = nums2[j];
                     j++;
                 }
             }
             while (i < nums1.length) {
                 mid--;
-                if (mid == 0) return (nums1[i]+t)/2.0;
-                t=nums1[i];
+                if (mid == 0) return (nums1[i] + t) / 2.0;
+                t = nums1[i];
                 i++;
             }
             while (j < nums2.length) {
                 mid--;
-                if (mid == 0) return (nums2[j]+t)/2.0;
-                t=nums2[j];
+                if (mid == 0) return (nums2[j] + t) / 2.0;
+                t = nums2[j];
                 j++;
             }
             return -1;

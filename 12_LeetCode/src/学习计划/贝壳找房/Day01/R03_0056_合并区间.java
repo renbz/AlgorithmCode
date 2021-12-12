@@ -21,14 +21,12 @@ public class R03_0056_合并区间 {
 
             while (i < intervals.length - 1 && intervals[i + 1][0] <= r) {
                 i++;
-                r = Math.max(r,intervals[i][1]);
+                r = Math.max(r, intervals[i][1]);
             }
-            list.add(new int[]{l,r});
+            list.add(new int[]{l, r});
             i++;
         }
 
         return list.toArray(new int[0][]);
-
     }
-
 }
