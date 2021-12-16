@@ -1,4 +1,4 @@
-package 学习计划.数据结构入门.Day02_两数之和;
+package 学习计划.数据结构入门.Day02_数组;
 
 import java.util.HashMap;
 import java.util.Map;
