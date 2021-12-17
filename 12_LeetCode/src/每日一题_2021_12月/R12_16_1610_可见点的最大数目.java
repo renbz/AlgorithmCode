@@ -1,7 +1,6 @@
 package 每日一题_2021_12月;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
