@@ -1,4 +1,4 @@
-package 学习计划.数据结构入门.Day05;
+package 学习计划.数据结构入门.Day05_数组;
 
 import java.util.HashMap;
 import java.util.HashSet;
