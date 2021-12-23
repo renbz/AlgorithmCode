@@ -1,4 +1,4 @@
-package 学习计划.数据结构入门.Day10_数;
+package 学习计划.数据结构入门.Day10_树;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,18 +10,21 @@ import java.util.Stack;
  * @Description:
  */
 
-public class R0144_二叉树的前序遍历 {
+public class R0094_二叉树的中序遍历 {
 
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        if (root == null) return ans;
+        if(root==null) return ans;
+        TreeNode cur = root;
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
+        while (!stack.isEmpty() || cur != null) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
             TreeNode node = stack.pop();
             ans.add(node.val);
-            if (node.right != null) stack.add(node.right);
-            if (node.left != null) stack.add(node.left);
+            if (node.right != null) cur = node.right;
         }
         return ans;
     }

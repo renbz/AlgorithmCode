@@ -7,10 +7,6 @@ package 每日一题_2021_12月;
  */
 
 public class R12_22_0686_重复叠加字符串匹配 {
-    public static void main(String[] args) {
-        R12_22_0686_重复叠加字符串匹配 obj = new R12_22_0686_重复叠加字符串匹配();
-        System.out.println(obj.repeatedStringMatch("abababaaba", "aabaaba"));
-    }
 
     public int repeatedStringMatch(String a, String b) {
         StringBuilder sb = new StringBuilder();
