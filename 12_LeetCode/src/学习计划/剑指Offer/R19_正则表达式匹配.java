@@ -7,35 +7,36 @@ package 学习计划.剑指Offer;
 public class R19_正则表达式匹配 {
 
     public boolean isMatch(String s, String p) {
-        // ∵ p中的*可以表示0-n个字符 故将p中的*全部忽略
-        String m = p;
-        p = replaceStar(p);
-        if (p.length() == 0) return true;
-        int j = 0;
-        int count = 0;
-        for (int i = 0; i < p.length(); i++) {
-            for (j = j; j < s.length(); j++) {
-                if (p.charAt(i) == s.charAt(j) || p.charAt(i) == '.') {
-                    if (++count == p.length()) return true;
-                    break;
+        int m = s.length();
+        int n = p.length();
+
+        boolean[][] f = new boolean[m + 1][n + 1];
+        f[0][0] = true;
+        for (int i = 0; i <= m; ++i) {
+            for (int j = 1; j <= n; ++j) {
+                if (p.charAt(j - 1) == '*') {
+                    f[i][j] = f[i][j - 2];
+                    if (matches(s, p, i, j - 1)) {
+                        f[i][j] = f[i][j] || f[i - 1][j];
+                    }
+                } else {
+                    if (matches(s, p, i, j)) {
+                        f[i][j] = f[i - 1][j - 1];
+                    }
                 }
             }
         }
-        return false;
+        return f[m][n];
     }
 
-    //将p中的*及其前面的字符去掉
-    public String replaceStar(String p) {
-
-        StringBuilder builder = new StringBuilder();
-        for (int i = p.length() - 1; i >= 0; i--) {
-            if (p.charAt(i) != '*') {
-                builder.append(p.charAt(i));
-            } else {
-                i--;
-            }
+    public boolean matches(String s, String p, int i, int j) {
+        if (i == 0) {
+            return false;
         }
-        return builder.reverse().toString();
+        if (p.charAt(j - 1) == '.') {
+            return true;
+        }
+        return s.charAt(i - 1) == p.charAt(j - 1);
     }
 
 }
