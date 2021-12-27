@@ -11,7 +11,7 @@ import java.util.Queue;
  * @Description:
  */
 
-public class R1901_二进制矩阵中的最短路径 {
+public class R1091_二进制矩阵中的最短路径 {
 
     public int shortestPathBinaryMatrix(int[][] grid) {
         int[][] temp = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
