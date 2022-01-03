@@ -13,9 +13,18 @@ import java.util.Set;
 public class R0139_单词拆分 {
 
     public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> wordDicSet = new HashSet<>();
-        boolean[]dp = new boolean[s.length()+1];
-        return true;
+        Set<String> wordDicSet = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && wordDicSet.contains(s.substring(j, i))) {
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[s.length()];
     }
 
 }
