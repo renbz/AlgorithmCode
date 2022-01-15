@@ -6,7 +6,7 @@ package 每日一题_2022_01月;
  * @Description:
  */
 
-public class R01_15_计算力扣银行的钱 {
+public class R01_15_1716_计算力扣银行的钱 {
 
     public int totalMoney(int n) {
         int t = n / 7, sum = 0;
