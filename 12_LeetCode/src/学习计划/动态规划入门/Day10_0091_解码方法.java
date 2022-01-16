@@ -6,7 +6,7 @@ package 学习计划.动态规划入门;
  * @Description:
  */
 
-public class Day0091_解码方法 {
+public class Day10_0091_解码方法 {
 
     public int numDecodings(String s) {
         int len = s.length();
