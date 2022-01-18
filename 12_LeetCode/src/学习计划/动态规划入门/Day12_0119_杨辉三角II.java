@@ -11,10 +11,10 @@ import java.util.List;
 
 public class Day12_0119_杨辉三角II {
 
-    public List<Integer> generate(int rowIndex) {
+    public List<Integer> getRow(int rowIndex) {
         List<Integer> ans = new ArrayList<>();
         ans.add(1);
-        for (int i = 1; i < rowIndex; ++i) {
+        for (int i = 1; i < rowIndex + 1; ++i) {
             ans.add(0);
             for (int j = i; j >= 1; j--) {
                 ans.set(j, ans.get(j) + ans.get(j - 1));
