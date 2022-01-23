@@ -10,12 +10,16 @@ public class Day18_0376_摆动序列 {
 
     public int wiggleMaxLength(int[] nums) {
         int n = nums.length;
-        if(n<2) return n;
-        int up = 1,down = 1;
-        for (int i = 0; i < n; i++) {
-
+        if (n < 2) return n;
+        int up = 1, down = 1;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] > nums[i - 1]) {
+                up = down + 1;
+            } else if (nums[i] < nums[i - 1]) {
+                down = up + 1;
+            }
         }
-        return 0;
+        return Math.max(down, up);
     }
 
 }
