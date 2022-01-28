@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * @Description:
  */
 
-public class 剑指Offer_II_025_链表中的两数相加 {
+public class 剑指OfferII_025_链表中的两数相加 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Deque<Integer> deque1 = new LinkedList<>();
