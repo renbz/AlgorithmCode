@@ -9,7 +9,7 @@ import java.util.Map;
  * @Description:
  */
 
-public class R02_06_唯一元素的和 {
+public class R02_06_1748_唯一元素的和 {
 
     public int sumOfUnique(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
