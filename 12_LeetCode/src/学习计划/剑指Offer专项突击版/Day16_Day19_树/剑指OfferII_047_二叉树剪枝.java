@@ -6,7 +6,7 @@ package 学习计划.剑指Offer专项突击版.Day16_Day19_树;
  * @Description:
  */
 
-public class 剑指Offer_II_047_二叉树剪枝 {
+public class 剑指OfferII_047_二叉树剪枝 {
 
     public TreeNode pruneTree(TreeNode root) {
         if (root == null) return root;
