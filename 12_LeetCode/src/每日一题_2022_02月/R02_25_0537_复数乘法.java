@@ -7,7 +7,6 @@ package 每日一题_2022_02月;
  */
 
 public class R02_25_0537_复数乘法 {
-
     public String complexNumberMultiply(String num1, String num2) {
         String[] complex1 = num1.split("\\+|i");
         String[] complex2 = num2.split("\\+|i");
@@ -17,5 +16,4 @@ public class R02_25_0537_复数乘法 {
         int imag2 = Integer.parseInt(complex2[1]);
         return String.format("%d+%di", real1 * real2 - imag1 * imag2, real1 * imag2 + imag1 * real2);
     }
-
 }
