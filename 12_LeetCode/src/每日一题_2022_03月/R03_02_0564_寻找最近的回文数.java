@@ -9,7 +9,7 @@ import java.util.Set;
  * @Description:
  */
 
-public class R03_02_564_寻找最近的回文数 {
+public class R03_02_0564_寻找最近的回文数 {
 
     public String nearestPalindromic(String s) {
         int n = s.length();
