@@ -8,21 +8,6 @@ package 每日一题_2022_03月;
 
 public class R03_19_0606_根据二叉树创建字符串 {
 
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode() {}
-     * TreeNode(int val) { this.val = val; }
-     * TreeNode(int val, TreeNode left, TreeNode right) {
-     * this.val = val;
-     * this.left = left;
-     * this.right = right;
-     * }
-     * }
-     */
     public String tree2str(TreeNode root) {
         if (root == null) {
             return "";
