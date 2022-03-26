@@ -8,11 +8,6 @@ package 学习计划.编程能力.编程能力入门.Day02_位运算;
 
 public class R1281_整数的各位积和之差 {
 
-    public static void main(String[] args) {
-        R1281_整数的各位积和之差 obj = new R1281_整数的各位积和之差();
-        System.out.println(obj.subtractProductAndSum(111));
-    }
-
     public int subtractProductAndSum(int n) {
         int cj = 1, sum = 0;
         while (n > 0) {
@@ -21,6 +16,6 @@ public class R1281_整数的各位积和之差 {
             cj *= num;
             n = n / 10;
         }
-        return Math.abs(sum - cj);
+        return cj - sum;
     }
 }
