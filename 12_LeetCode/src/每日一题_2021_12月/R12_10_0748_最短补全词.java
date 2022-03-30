@@ -1,9 +1,6 @@
 package 每日一题_2021_12月;
 
-import 每日一题_2021_9月.Main;
-
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
