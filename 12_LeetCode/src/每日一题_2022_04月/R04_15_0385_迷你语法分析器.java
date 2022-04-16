@@ -21,22 +21,23 @@ public class R04_15_0385_迷你语法分析器 {
         int l = 1, r = 1;
         for (; r < s.length(); r++) {
             char ch = s.charAt(r);
-            if(ch=='['){
+            if (ch == '[') {
                 NestedInteger ni = new NestedInteger();
-                l = r+1;
+                l = r + 1;
                 stack.peek().add(ni);
                 stack.push(ni);
-            }else if(ch==']' || ch==','){
-                if(l<r){
-                    Integer val = Integer.valueOf(s.substring(l,r));
+            } else if (ch == ']' || ch == ',') {
+                if (l < r) {
+                    Integer val = Integer.valueOf(s.substring(l, r));
                     stack.peek().add(new NestedInteger(val));
                 }
-                l=r+1;
-                if(ch==']') stack.pop();
+                l = r + 1;
+                if (ch == ']') stack.pop();
             }
         }
         return res;
     }
+
     class NestedInteger {
         // Constructor initializes an empty nested list.
         public NestedInteger() {
