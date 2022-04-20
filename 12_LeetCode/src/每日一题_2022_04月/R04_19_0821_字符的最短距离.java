@@ -20,9 +20,7 @@ public class R04_19_0821_字符的最短距离 {
                 queue.add(i);
             }
         }
-        final int size = queue.size();
         int t = queue.poll();
-
         for (int i = 0; i < len; i++) {
             if (!queue.isEmpty() && Math.abs(t - i) <= Math.abs(queue.peek() - i)) {
                 ans[i] = Math.abs(t - i);
