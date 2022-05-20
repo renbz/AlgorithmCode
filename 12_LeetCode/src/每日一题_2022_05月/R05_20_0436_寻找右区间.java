@@ -20,7 +20,6 @@ public class R05_20_0436_寻找右区间 {
             endIntervals[i][0] = intervals[i][1];
             endIntervals[i][1] = i;
         }
-
         Arrays.sort(startIntervals, (o1, o2) -> o1[0] - o2[0]);
         Arrays.sort(endIntervals, (o1, o2) -> o1[0] - o2[0]);
 
