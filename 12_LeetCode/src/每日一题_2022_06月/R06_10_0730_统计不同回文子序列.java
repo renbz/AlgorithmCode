@@ -6,7 +6,7 @@ package 每日一题_2022_06月;
  * @Description:
  */
 
-public class R07_10_0730_统计不同回文子序列 {
+public class R06_10_0730_统计不同回文子序列 {
 
     public int countPalindromicSubsequences(String s) {
         final int MOD = 1000000007;

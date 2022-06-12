@@ -6,7 +6,7 @@ package 每日一题_2022_06月;
  * @Description:
  */
 
-public class R07_08_1037_有效的回旋镖 {
+public class R06_08_1037_有效的回旋镖 {
 
     public boolean isBoomerang(int[][] points) {
         return !(points[0][0] == points[1][0] && points[1][0] == points[2][0] && points[0][1] == points[1][1] && points[1][1] == points[2][1])

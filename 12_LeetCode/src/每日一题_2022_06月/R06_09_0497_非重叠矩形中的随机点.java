@@ -10,7 +10,7 @@ import java.util.Random;
  * @Description:
  */
 
-public class R07_09_0497_非重叠矩形中的随机点 {
+public class R06_09_0497_非重叠矩形中的随机点 {
 
     class Solution {
 
