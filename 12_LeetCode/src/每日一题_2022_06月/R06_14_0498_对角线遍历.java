@@ -6,7 +6,7 @@ package 每日一题_2022_06月;
  * @Description:
  */
 
-public class R06_14_498_对角线遍历 {
+public class R06_14_0498_对角线遍历 {
 
     public int[] findDiagonalOrder(int[][] mat) {
         int m = mat.length;
