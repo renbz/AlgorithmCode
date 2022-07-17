@@ -48,9 +48,6 @@ class R07_15_0558_四叉树交集 {
             bottomRight = _bottomRight;
         }
     }
-
-    ;
-
 }
 
 
