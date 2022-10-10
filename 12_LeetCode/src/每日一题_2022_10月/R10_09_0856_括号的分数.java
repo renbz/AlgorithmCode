@@ -19,8 +19,8 @@ public class R10_09_0856_括号的分数 {
                 st.push(0);
             } else {
                 int v = st.pop();
-                v += Math.max(2 * v, 1);
-                st.push(v);
+                int top = st.pop() + Math.max(2 * v, 1);
+                st.push(top);
             }
         }
         return st.peek();
