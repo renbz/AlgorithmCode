@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_LanQiaoCup_TrueQuestions/01_LanQiaoCup_TrueQuestions.iml" filepath="$PROJECT_DIR$/01_LanQiaoCup_TrueQuestions/01_LanQiaoCup_TrueQuestions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_LanQiao_AlgorithmOnlineCourse/02_LanQiao_AlgorithmOnlineCourse.iml" filepath="$PROJECT_DIR$/02_LanQiao_AlgorithmOnlineCourse/02_LanQiao_AlgorithmOnlineCourse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Algorithm_class/03_Algorithm_class.iml" filepath="$PROJECT_DIR$/04_Algorithm_class/03_Algorithm_class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Interview_SwordFingerOffer/03_Interview_SwordFingerOffer.iml" filepath="$PROJECT_DIR$/03_Interview_SwordFingerOffer/03_Interview_SwordFingerOffer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_SangGG_Algorithm/05_SangGG_Algorithm.iml" filepath="$PROJECT_DIR$/05_SangGG_Algorithm/05_SangGG_Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Algorithm_Notes/06_Algorithm_Notes.iml" filepath="$PROJECT_DIR$/06_Algorithm_Notes/06_Algorithm_Notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_BusinessExamProblems/07_企业笔试题.iml" filepath="$PROJECT_DIR$/07_BusinessExamProblems/07_企业笔试题.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_TeamLadderRace/08_团队天梯赛.iml" filepath="$PROJECT_DIR$/08_TeamLadderRace/08_团队天梯赛.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_ACM_Practice/09_ACM_Practice.iml" filepath="$PROJECT_DIR$/09_ACM_Practice/09_ACM_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_TestModule/10_TestModule.iml" filepath="$PROJECT_DIR$/10_TestModule/10_TestModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_MathModeling/11_数学建模.iml" filepath="$PROJECT_DIR$/11_MathModeling/11_数学建模.iml" />
       <module fileurl="file://$PROJECT_DIR$/12_LeetCode/12_LeetCode.iml" filepath="$PROJECT_DIR$/12_LeetCode/12_LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13_Tmp/13_Tmp.iml" filepath="$PROJECT_DIR$/13_Tmp/13_Tmp.iml" />
     </modules>
   </component>
 </project>
